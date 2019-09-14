@@ -1,0 +1,14 @@
+{
+  "name": "@ember/edition-utils",
+  "version": "1.0.0",
+  "description": "Utilities to detect if a given edition is in use in an ember-cli application.",
+  "main": "index.js",
+  "scripts": {
+    "test": "qunit test.js"
+  },
+  "author": "Robert Jackson <me@rwjblue.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "qunit": "^2.9.2"
+  }
+}
