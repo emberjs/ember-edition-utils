@@ -1,3 +1,11 @@
+## v1.1.1 (2019-09-15)
+
+#### :bug: Bug Fix
+* [#3](https://github.com/emberjs/ember-edition-utils/pull/3) Force setEdition / has to normalize (by lowercasing) ([@rwjblue](https://github.com/rwjblue))
+
+#### Committers: 1
+- Robert Jackson ([@rwjblue](https://github.com/rwjblue))
+
 ## v1.1.0 (2019-09-15)
 
 #### :rocket: Enhancement
