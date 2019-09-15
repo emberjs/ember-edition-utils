@@ -27,7 +27,18 @@ function clearEdition() {
   @returns {boolean}
 */
 function _getEdition() {
-  return process.env.EMBER_EDITION;
+  let edition = process.env.EMBER_EDITION;
+
+  if (edition === undefined) {
+    // check fallback "old" location
+    edition = process.env.EMBER_VERSION;
+
+    if (edition === 'octane') {
+      console.log('Please update to using @ember/edition-utils. Using process.env.EMBER_VERSION to declare your application / addon as "octane" ready is deprecated.');
+    }
+  }
+
+  return edition;
 }
 
 /**
