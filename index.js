@@ -6,7 +6,7 @@
   @param {string} editionName the Edition name that your application is authored in
 */
 function setEdition(editionName) {
-  process.env.EMBER_EDITION = editionName;
+  process.env.EMBER_EDITION = editionName.toLowerCase();
 }
 
 /**
@@ -38,7 +38,9 @@ function _getEdition() {
     }
   }
 
-  return edition;
+  if (edition) {
+    return edition.toLowerCase();
+  }
 }
 
 /**
@@ -51,7 +53,8 @@ function _getEdition() {
 
   @param {string} requestedEditionName the Edition name that the application/addon is requesting
 */
-function has(requestedEditionName) {
+function has(_requestedEditionName) {
+  let requestedEditionName = _requestedEditionName.toLowerCase();
   let edition = _getEdition();
 
   if (requestedEditionName === 'classic') {
