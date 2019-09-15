@@ -24,6 +24,12 @@ QUnit.module('@ember/edition-utils', function(hooks) {
 
       assert.strictEqual(getEdition(), 'octane');
     });
+
+    test('normalizes the edition name that is passed in (lowercasing)', function(assert) {
+      setEdition('OCTANE');
+
+      assert.strictEqual(getEdition(), 'octane');
+    });
   });
 
   QUnit.module('has', function() {
@@ -36,6 +42,13 @@ QUnit.module('@ember/edition-utils', function(hooks) {
 
       assert.ok(has('octane'));
     });
+
+    test('should match case insensitively', function(assert) {
+      setEdition('octane');
+
+      assert.ok(has('OCTANE'));
+    });
+
 
     test('should not "have" octane, when edition is classic', function(assert) {
       setEdition('classic');
