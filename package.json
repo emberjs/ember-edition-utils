@@ -1,6 +1,6 @@
 {
   "name": "@ember/edition-utils",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Utilities to detect if a given edition is in use in an ember-cli application.",
   "repository": "https://github.com/emberjs/ember-octane-utils.git",
   "license": "MIT",
