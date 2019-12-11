@@ -1,3 +1,11 @@
+## v1.2.0 (2019-12-11)
+
+#### :rocket: Enhancement
+* [#4](https://github.com/emberjs/ember-edition-utils/pull/4) Refactor edition detection for [emberjs/rfcs#558](https://github.com/emberjs/rfcs/pull/558). ([@rwjblue](https://github.com/rwjblue))
+
+#### Committers: 1
+- Robert Jackson ([@rwjblue](https://github.com/rwjblue))
+
 ## v1.1.1 (2019-09-15)
 
 #### :bug: Bug Fix
